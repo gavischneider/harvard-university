@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <h1>PORTFOLIO</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+            <tr>
+                <td>{{stock.symbol}}</td>
+                <td>{{stock.shares}}</td>
+                <td>{{stock.price}}</td>
+                <td>{{stock.total}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div>{{ cash }}</div>
+    <br>
+    <h3>Add More Money</h3>
+    
+    <form action="/" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="How much money:" type="number">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Add</button>
+    </form>
+
+
+{% endblock %}
