@@ -1,0 +1,21 @@
+$base-color: black;
+$base-color2: white;
+
+li {
+  a {
+    color: $base-color;
+  }
+}
+
+.table {
+  color: $base-color2;
+}
+
+.picture {
+  height: 300px;
+}
+
+#profile-pic {
+  @extend .picture;
+  width: 300px;
+}

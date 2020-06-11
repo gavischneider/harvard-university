@@ -1,0 +1,17 @@
+li a {
+  color: black;
+}
+
+.table {
+  color: white;
+}
+
+.picture, #profile-pic {
+  height: 300px;
+}
+
+#profile-pic {
+  width: 300px;
+}
+
+/*# sourceMappingURL=styles.css.map */
