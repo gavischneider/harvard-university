@@ -1,4 +1,4 @@
-# harvard-courses
+# harvard-university
 Problem sets and projects for Harvard University programming courses.
 
 List of Courses:
